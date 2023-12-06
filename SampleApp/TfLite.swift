@@ -36,7 +36,11 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         var input = Array(repeating: Float32(1.0), count: 1 * 10 * 10 * 3)
         for i in 0..<10 {
             for j in 0..<10 {
-                input[3 * (10 * i + j) + 0] = 4
+                if i < 5 {
+                    input[3 * (10 * i + j) + 0] = 4
+                } else {
+                    input[3 * (10 * i + j) + 0] = 10
+                }
                 input[3 * (10 * i + j) + 1] = 1
                 input[3 * (10 * i + j) + 2] = 2
             }
