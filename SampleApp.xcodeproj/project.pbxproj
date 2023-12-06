@@ -18,6 +18,8 @@
 		0C3158EE2B205C1600256A21 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3158ED2B205C1600256A21 /* Tensor.swift */; };
 		0C3158F02B205C1C00256A21 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3158EF2B205C1C00256A21 /* TensorFlowLite.swift */; };
 		0C3158F32B20605800256A21 /* mean_only.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 0C3158F22B20602F00256A21 /* mean_only.tflite */; };
+		0C3158F62B20B2ED00256A21 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3158F52B20B2ED00256A21 /* Data.swift */; };
+		0C3158F92B20B41400256A21 /* FlatArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3158F82B20B41400256A21 /* FlatArray.swift */; };
 		0CA5825A2B204E9B00779000 /* SampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA582592B204E9B00779000 /* SampleAppApp.swift */; };
 		0CA5825C2B204E9B00779000 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5825B2B204E9B00779000 /* ContentView.swift */; };
 		0CA5825E2B204E9C00779000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5825D2B204E9C00779000 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		0C3158ED2B205C1600256A21 /* Tensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
 		0C3158EF2B205C1C00256A21 /* TensorFlowLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorFlowLite.swift; sourceTree = "<group>"; };
 		0C3158F22B20602F00256A21 /* mean_only.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; name = mean_only.tflite; path = model/mean_only.tflite; sourceTree = SOURCE_ROOT; };
+		0C3158F52B20B2ED00256A21 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0C3158F82B20B41400256A21 /* FlatArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatArray.swift; sourceTree = "<group>"; };
 		0CA582562B204E9B00779000 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA582592B204E9B00779000 /* SampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppApp.swift; sourceTree = "<group>"; };
 		0CA5825B2B204E9B00779000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 			path = TensorFlowSwift;
 			sourceTree = "<group>";
 		};
+		0C3158F42B20B2D500256A21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C3158F52B20B2ED00256A21 /* Data.swift */,
+				0C3158F82B20B41400256A21 /* FlatArray.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0CA5824D2B204E9B00779000 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +129,7 @@
 		0CA582582B204E9B00779000 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0C3158F42B20B2D500256A21 /* Extensions */,
 				0C3158F12B205C2300256A21 /* TensorFlowSwift */,
 				0CA5826F2B20579900779000 /* TfLite.swift */,
 				0C3158F22B20602F00256A21 /* mean_only.tflite */,
@@ -223,7 +237,9 @@
 				0CA582702B20579900779000 /* TfLite.swift in Sources */,
 				0CA5825C2B204E9B00779000 /* ContentView.swift in Sources */,
 				0C3158F02B205C1C00256A21 /* TensorFlowLite.swift in Sources */,
+				0C3158F62B20B2ED00256A21 /* Data.swift in Sources */,
 				0C3158EE2B205C1600256A21 /* Tensor.swift in Sources */,
+				0C3158F92B20B41400256A21 /* FlatArray.swift in Sources */,
 				0C3158E82B205C0800256A21 /* QuantizationParameters.swift in Sources */,
 				0C3158EA2B205C0D00256A21 /* SignatureRunner.swift in Sources */,
 				0C3158E42B205BFB00256A21 /* InterpreterError.swift in Sources */,
